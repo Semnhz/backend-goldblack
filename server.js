@@ -7,6 +7,11 @@ const path = require('path');
 
 const app = express();
 
+app.use(cors({
+  origin: '*',
+  credentials: true
+}));
+
 // Middleware
 app.use(cors({
   origin: ['https://goldblackagency.com', 'http://localhost:8000'],
