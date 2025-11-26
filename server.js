@@ -16,14 +16,6 @@ app.use(cors({
 app.use(express.json());
 app.options('*', cors());
 
-
-// Middleware
-app.use(cors({
-  origin: ['https://goldblackagency.com', 'http://localhost:8000'],
-  credentials: true
-}));
-app.use(express.json());
-
 // Configurazione Prodotti
 const prodotti = {
   'blog': {
