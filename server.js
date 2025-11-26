@@ -7,10 +7,15 @@ const path = require('path');
 
 const app = express();
 
+// Middleware CORS - PERMETTI TUTTI I DOMINI
 app.use(cors({
   origin: '*',
   credentials: true
 }));
+
+app.use(express.json());
+app.options('*', cors());
+
 
 // Middleware
 app.use(cors({
