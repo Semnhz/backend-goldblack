@@ -21,37 +21,37 @@ const prodotti = {
   'blog': {
     nome: 'Template Blog',
     prezzo: 55995,
-    priceId: 'price_1SWhSZKFaTfN0EN0ND1lRPw8',
+    priceId: 'price_1SY8qIRO6ugtav5vKMgsAhKT',
     file: 'template-blog.zip'
   },
   'ecommerce': {
     nome: 'Template E-Commerce',
     prezzo: 285500,
-    priceId: 'price_1SWhUdKFaTfN0EN0gYSnXP1L',
+    priceId: 'price_1SY8qgRO6ugtav5vHz1j4Iwy',
     file: 'template-ecommerce.zip'
   },
   'portfolio': {
     nome: 'Template Portfolio',
     prezzo: 49595,
-    priceId: 'price_1SWhWbKFaTfN0EN00xl8oKnS',
+    priceId: 'price_1SY8r7RO6ugtav5vs5VRF5Tn',
     file: 'template-portfolio.zip'
   },
   'cv-base': {
     nome: 'CV Template Base',
     prezzo: 1000,
-    priceId: 'price_1SWhXbKFaTfN0EN0jVMsKaOF',
+    priceId: 'price_1SY8rhRO6ugtav5vk9DJSAFS',
     file: 'cv-base.zip'
   },
   'cv-pro': {
     nome: 'CV Template Pro',
     prezzo: 1500,
-    priceId: 'price_1SWhYaKFaTfN0EN0hFsgJOtK',
+    priceId: 'price_1SY8sCRO6ugtav5vqedHQLLg',
     file: 'cv-pro.zip'
   },
   'cv-lusso': {
     nome: 'CV Template Lusso',
     prezzo: 2000,
-    priceId: 'price_1SWhYyKFaTfN0EN0yOogMPQC',
+    priceId: 'price_1SY8skRO6ugtav5vyKmt8kqR',
     file: 'cv-lusso.zip'
   }
 };
