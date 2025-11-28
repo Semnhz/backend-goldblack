@@ -167,3 +167,43 @@ app.listen(PORT, () => {
 });
 
 module.exports = app;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Endpoint verifica pagamento e download
+app.get('/api/verify-payment/:sessionId', async (req, res) => {
+  try {
+    const { sessionId } = req.params;
+    const session = await stripe.checkout.sessions.retrieve(sessionId);
+
+    if (session.payment_status === 'paid') {
+      const productId = session.metadata.productId;
+      const prodotto = prodotti[productId];
+      
+      res.json({
+        success: true,
+        downloadUrl: `/downloads/${prodotto.file}`,
+        productName: prodotto.nome
+      });
+    } else {
+      res.json({ success: false, error: 'Pagamento non completato' });
+    }
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
